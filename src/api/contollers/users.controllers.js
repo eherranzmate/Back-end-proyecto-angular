@@ -37,7 +37,7 @@ const register = async (req, res, next) => {
         }
         await user.save();
 
-        return res.status(201).json({msg: 'Revisa tu correo. Se te ha enviado un enlace de confirmación'})
+        return res.status(201).json({msg: 'Usuario registrado con éxito'})
 
     } catch (error) {
         const err = new Error("Ha ocurrido un error con el registro.");
